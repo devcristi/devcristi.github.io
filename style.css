@@ -920,14 +920,13 @@ h1>.magic>.magic-text {
 
 @media(max-width:1000px)
 {
-
-    .cursor
-    {
-        display: none;
-    }
 }
 
 @media(max-width: 1100px) {
+    body .cursor
+    {
+        display: none;
+    }
     nav {
         background-color: var(--body-bg-color);
         justify-content: space-between;
