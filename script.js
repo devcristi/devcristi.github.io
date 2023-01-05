@@ -1,4 +1,3 @@
-
 const menu = document.getElementById("menu");
 
 Array.from(document.getElementsByClassName("menu-item"))
@@ -106,10 +105,8 @@ const handleNavToggle = () => {
   nav.dataset.toggled = nav.dataset.toggled === "true" ? "false" : "true";
 }
 
-
 window.matchMedia("(max-width: 800px)").onchange = e => {
   nav.dataset.transitionable = "false";
 
   nav.dataset.toggled = "false";
 };
-
