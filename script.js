@@ -1,3 +1,4 @@
+
 const menu = document.getElementById("menu");
 
 Array.from(document.getElementsByClassName("menu-item"))
@@ -110,3 +111,4 @@ window.matchMedia("(max-width: 800px)").onchange = e => {
 
   nav.dataset.toggled = "false";
 };
+
