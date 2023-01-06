@@ -235,6 +235,11 @@ nav .nav-section {
     margin-top: 10px;
 }
 
+#nav-logo-section>a>i 
+{
+    display: none;
+}
+
 #nav-logo-section>a> {
     font-size: 2.5rem;
 }
