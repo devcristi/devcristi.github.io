@@ -167,9 +167,7 @@ nav {
     /* animation: slide-in-top 2s;
     animation-delay: 5s; */
     /* position: fixed; */
-    position: fixed;
-    overflow: hidden;
-    z-index:9999999999999999999999999999999;
+    position: relative;
     display: flex;
     width: 100%;
     border-bottom: 1px solid var(--border-color);
