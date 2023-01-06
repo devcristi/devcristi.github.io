@@ -105,8 +105,8 @@ const handleNavToggle = () => {
   nav.dataset.toggled = nav.dataset.toggled === "true" ? "false" : "true";
 }
 
-window.matchMedia("(max-width: 800px)").onchange = e => {
-  nav.dataset.transitionable = "false";
+// window.matchMedia("(max-width: 800px)").onchange = e => {
+//   nav.dataset.transitionable = "false";
 
-  nav.dataset.toggled = "false";
-};
+//   nav.dataset.toggled = "false";
+// };
