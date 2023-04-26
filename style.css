@@ -490,6 +490,18 @@ nav .nav-section {
     /* gap:rem; */
 }
 
+.img
+{
+    width: 100%;
+}
+
+.project-card img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .project-container {
     gap: 2rem;
     display: flex;
@@ -506,14 +518,11 @@ nav .nav-section {
         --small-font-size: 1rem;
         --smaller-font-size: .813rem;
     }
-    .home
-    {
-        min-height: 100vh;
 
-        width: 100vw;
-        height: 100vh;
-        /* font-size: var(--normal-font-size); */
-        /* margin-top: 50px; */
+    section
+    {
+        min-width: 100%;
+        min-height: 100%;
     }
 
     .home p, h2,h1
@@ -689,6 +698,23 @@ nav .nav-section {
 }
 
 @media(max-width: 1100px) {
+    .btn {
+        background-color: transparent;
+        /* transform: translate(0%, 100%); */
+        margin: 0 auto;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        border-color: #ccd6f6;
+        font-size: 1.25rem;
+        color: #ccd6f6;
+    }
+    
+    .btn:hover
+    {
+        background-color: #ccd6f6;
+        color: var(--body-bg-color);
+    }
     #nav-mobile-section {
         background-color: var(--body-bg-color);
         flex-direction: column;
@@ -783,9 +809,9 @@ nav .nav-section {
         overflow: hidden;
     }
 
-    .home-container .info p {
+    .home-container .info p,h2 {
         color: #5defcf;
-        font-size: var(--small-font-size);
+        font-size: var(--normal-font-size);
         font-weight: 600;
         line-height: 30px;
     }
@@ -807,7 +833,7 @@ nav .nav-section {
         padding: 10px 20px;
         font-size: 1em;
         position: relative;
-        margin: 32px;
+        /* margin: 32px; */
     }
 
     .btn-2 {
@@ -918,6 +944,7 @@ h1>.magic>.magic-text {
             var(--purple));
     background-size: 200%;
     -webkit-background-clip: text;
+    background-clip:text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
 }
@@ -976,7 +1003,7 @@ h1>.magic>.magic-text {
     }
 
     #nav-logo-section {
-        flex-basis: //calc(100% * 0.25);
+        flex-basis: calc(100% * 0.25);
     }
 
     #nav-link-section {
@@ -1021,6 +1048,12 @@ h1>.magic>.magic-text {
 }
 
 @media(max-width: 1100px) {
+    html {
+        scroll-padding-top: 25px;
+        overflow: hidden;
+        overflow-y: scroll;
+      }      
+    
     #nav-mobile-section {
         background-color: var(--body-bg-color);
         flex-direction: column;

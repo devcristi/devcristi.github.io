@@ -111,4 +111,9 @@ window.matchMedia("(max-width: 800px)").onchange = e => {
   nav.dataset.toggled = "false";
 };
 
-AOS.init();
+function handleNavLinkClick() {
+  const nav = document.querySelector('nav[data-toggled="true"]');
+  if (nav) {
+    nav.setAttribute('data-toggled', 'false');
+  }
+}

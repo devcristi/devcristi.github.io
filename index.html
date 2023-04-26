@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALA BUN</title>
+    <title>devcristi.tech</title>
     <script src="script.js" type="text/babel"></script>
     <link rel="icon" href="./logo_a.svg">
     <link rel="stylesheet" href="./style.css">
@@ -23,27 +23,66 @@
 </head>
 
 <body>
+    <script>
+        
+document.addEventListener('click', function(event) {
+  if (event.target.closest('nav') && (event.target.tagName === 'A' || event.target.tagName === 'I')) {
+    const nav = document.querySelector('nav[data-toggled="true"]');
+    if (nav) {
+      nav.setAttribute('data-toggled', 'false');
+    }
+  }
+});
+
+function handleNavToggle() {
+  const nav = document.querySelector('nav');
+  const toggled = nav.getAttribute('data-toggled') === 'true';
+  nav.setAttribute('data-toggled', !toggled);
+}
+// Get the height of your navbar
+// const navbarHeight = document.querySelector('nav').offsetHeight;
+
+// Add an event listener to all anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (event) {
+    // Prevent the default link behavior
+    event.preventDefault();
+
+    // Get the target element based on the link's href attribute
+    const target = document.querySelector(this.getAttribute('href'));
+
+    // If the target element exists, scroll to it with an offset equal to the navbar height
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - navbarHeight,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+      </script>
     <!-- header -->
     <!-- <div class="wrapper"> -->
     <nav data-toggled="false" data-transitionable="false">
-        <a href="#home" id="nav-logo-section" class"nav-section>
+        <a href="#home" id="nav-logo-section">
             <div>
             </div>
         </a>
         <div id="nav-mobile-section">
             <div id="nav-link-section" class="nav-section">
-                <a href="#about">ABOUT</a>
-                <a href="#work">WORK</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#work" class="nav-link">WORK</a>
             </div>
             <div id="nav-social-section" class="nav-section">
-                <a href="#contact">
-                    <i class="fa-regular fa-address-book"></i>
+                <a href="#contact" class="nav-link">
+                    <i class="fa-regular fa-address-book" class="nav-link" class="nav-link"></i>
                 </a>
                 <a href="https://github.com/devcristi" target="_blank">
-                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-github" class="nav-link"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/cristian-daniel-boabes-2a2497248/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-linkedin" class="nav-link"></i>
                 </a>
             </div>
             <div id="nav-resume-section" class="nav-section">
@@ -127,39 +166,48 @@
             <h1>Take a look at my projects!</h1>
             <div class="project-container">
                 <div class="project-card">
-                    <img class="project-image" src="./coding.jpg" alt="Project One Image" />
+                        <img class="project-image" src="./react.jpg" alt="Project One Image" />
+                    
                     <h2>SVG animated loader</h2>
-                    <p class="subtext">This is a SVG loader with a infinite loop animation, and it can be used for any website.</p>
+                    <p class="subtext">This is a SVG loader with an infinite loop animation, and it can be used for any website.</p>
                     <hr />
                     <div class="project-link">
-                        <a target="_blank" href="https://codepen.io/cristicalutu-the-decoder/pen/mdjryqv">
+                        <a target="_blank" href="https://codepen.io/cristicalutu-the-decoder/full/mdjryqv">
                             <button class="project-buttons left">Try it</button>
                         </a>
-                        <button class="project-buttons right">Source code</button>
+                        <a target="_blank" href="https://codepen.io/cristicalutu-the-decoder/pen/mdjryqv">
+                            <button class="project-buttons right">Source code</button>
+                        </a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img class="project-image" src="./coding.jpg" alt="Project One Image" />
+                    <img class="project-image" src="./uiux.jpg" alt="Project One Image" />
                     <h2>Sticky blob</h2>
                     <p class="subtext">A fancy blob that is following the mouse cursor for a nice background ux effect.</p>
                     <hr />
                     <div class="project-link">
-                        <a target="_blank" href=https://codepen.io/cristicalutu-the-decoder/pen/vYVXMre>
+                        <a target="_blank" href="https://codepen.io/cristicalutu-the-decoder/full/vYVXMre">
                             <button class="project-buttons left">Try it</button>
                         </a>
+                        <a target="_blank" href="https://codepen.io/cristicalutu-the-decoder/pen/vYVXMre">
                             <button class="project-buttons right">Source code</button>
+                        </a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img class="project-image" src="./coding.jpg" alt="Project One Image" />
-                    <h2>Project Three</h2>
-                    <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                    <img class="project-image" src="./css.jpg" alt="Project One Image" />
+                    <h2>Magical text</h2>
+                    <p class="subtext">Randomly generated stars that can be applied on text. It's also comes with a
+                        linear gradient for the words that have stars.
+                    </p>
                     <hr />
                     <div class="project-link">
-                        <a target="_blank" href="https://codepen.io/cristicalutu-the-decoder/pen/mdjryqv">
+                        <a target="_blank" href="https://codepen.io/cristicalutu-the-decoder/full/ExdmGLd">
                             <button class="project-buttons left">Try it</button>
                         </a>
-                        <button class="project-buttons right">Source code</button>
+                        <a href="https://codepen.io/cristicalutu-the-decoder/pen/ExdmGLd" target="_blank">
+                            <button class="project-buttons right">Source code</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -167,7 +215,7 @@
         <section class="contact" id="contact">
             <h1>Get in touch</h1>
             <p>Good news! I am open for any opportunies! <br>
-                So, if you would like to work with me, <br> or you have any questions, don't be afraid and
+                So, if you would like to work with me, <br> or you have any questions, don't be afraid and...
                 <br>
                 <a href="mailto:cristiandanielboabes@gmail.com">
                     <button class="contact-btn">
@@ -198,13 +246,6 @@
             </div>
         </section>
     </div>
-
-    <script>
-        // Wait 10 seconds before hiding the website loader
-        setTimeout(function () {
-            document.querySelector('.loader-wrapper').style.display = 'none';
-        }, 5000);
-    </script>
 </body>
 
 </html>
