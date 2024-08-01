@@ -1,0 +1,48 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper
+{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    background-color: #24AE65;
+    padding-left: 20px;
+    z-index: 1000;
+}
+
+.wrapper h1
+{
+    font-size: var(--big-font-size);
+    font-weight: 700;
+    color: white;
+    -webkit-text-stroke: 2px #101010;
+}
+
+.img
+{
+    width: 60%;
+    height: 90%;
+    background-image: url("./portimt.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #101010;
+}
+
+.left
+{
+    align-self: flex-start;
+}
+
+.right
+{
+    text-align: right;
+}

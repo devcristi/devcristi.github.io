@@ -1,0 +1,41 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.preloader
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    background-color: black;
+    top: 0;
+    left: 0;
+}
+
+.text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text p
+{
+    font-size: var(--normal-font-size);
+    color: white;
+    text-transform: uppercase;
+}
+
+.text h1
+{
+    color: white;
+    font-size: var(--big-font-size);
+}

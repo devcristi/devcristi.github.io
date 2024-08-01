@@ -1,0 +1,90 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.projectcontainer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    background-color: black;
+}
+
+.projectwrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    background-color: black;
+    overflow: hidden;
+}
+
+.projectwrapper a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #1a1b1c;
+    padding-bottom: 4px;
+    transition: color 0.5s ease;
+    text-decoration: none;
+    border-bottom: 3px solid #454545;
+}
+
+.projectwrapper a:hover {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.heading {
+    font-size: var(--big-font-size);
+    text-transform: uppercase;
+}
+
+.subheading {
+    font-size: var(--medium-font-size);
+    padding-bottom: 10px;
+}
+
+.arrow {
+    font-size: var(--big-font-size);
+    display: none;
+}
+
+.projectwrapper:hover .arrow {
+    display: block;
+}
+
+.letter {
+    display: inline-block;
+}
+
+.img {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    z-index: 0;
+}
+
+.img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

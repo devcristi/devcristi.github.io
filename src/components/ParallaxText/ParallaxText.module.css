@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider h1
+{
+    font-size: var(--big-font-size);
+    font-weight: 700;
+    color: white;
+    -webkit-text-stroke: 2px #101010;
+    text-transform: uppercase;
+}
+
+.wrapper
+{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 20vh;
+}
+
+.sliderContainer
+{
+    position: absolute;
+
+}
+
+.slider
+{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    height: auto;
+}
+
+.text1
+{
+    position: relative;
+}
+
+.text2
+{
+    position: absolute;
+    left: 100%;
+}
