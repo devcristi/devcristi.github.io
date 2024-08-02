@@ -46,10 +46,10 @@ function App() {
 
   return (
     <div className="App">
-      <ScrollToTop />
       <AnimatePresence mode="wait">
         {isLoading && <Preloader key="preloader" />}
       </AnimatePresence>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={
           <>

@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import styles from "./ProjectTemplate.module.css";
 import Navbar from "../../Navbar/Navbar";
 import { motion, useScroll, useTransform } from "framer-motion";
+import ScrollToTop from "../../ScrollToTop/ScrollToTop";
 
 const ProjectTemplate = ({ title, subheading, imgSrc, text, img1 }) => {
     const projectTemplateRef = useRef(null);
@@ -13,6 +14,7 @@ const ProjectTemplate = ({ title, subheading, imgSrc, text, img1 }) => {
 
     return (
         <div className={styles.wrapper}>
+            <ScrollToTop />
             <div className={styles.projectTemplate} ref={projectTemplateRef}>
                 <Navbar />
                 <div className={styles.sticky}>

@@ -22,30 +22,6 @@ const LandingPage = () => {
 
   return (
     <div className={styles.landingpage} >
-      {/* <div className={styles.navbar}>
-        <ul>
-          <li>
-            <div className={styles.logo}>
-              <Link to='#home'>
-                devcristi
-              </Link>
-            </div>
-          </li>
-            <Link to='#about'>
-              <Button>
-                about
-              </Button>
-            </Link>
-            <Link to='#projects'>
-              <Button>
-                work
-              </Button>
-            </Link>
-            <Link to='#contact'>
-              <Button>contact</Button>
-            </Link>
-        </ul>
-      </div> */}
       <div className={styles.wrapper} ref={container} id="home">
         <div className={styles.section}>
           <motion.h1 style={{ y: md }} initial={{ y: 0 }}>

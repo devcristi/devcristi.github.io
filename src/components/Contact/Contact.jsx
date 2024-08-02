@@ -3,7 +3,6 @@ import styles from "./Contact.module.css";
 import { useScroll, useTransform, motion } from "framer-motion";
 import TextField from '@mui/material/TextField';
 import Button from "../Button/Buttonb.jsx";
-
 const Contact = () => {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -18,7 +17,7 @@ const Contact = () => {
     const md = useTransform(scrollYProgress, [0, 1], [0, -500]);
 
     const handleCopyEmail = () => {
-        const email = "someone@example.com";
+        const email = "cristiandanielboabes@gmail.com";
         navigator.clipboard.writeText(email).then(() => {
             alert("Email copied to clipboard!");
         }).catch(err => {
