@@ -39,3 +39,16 @@
     color: white;
     font-size: var(--big-font-size);
 }
+
+@media screen and (max-width: 460px) {
+
+    .text h1
+    {
+        font-size: var(--normal-font-size);
+    }
+
+    .text p
+    {
+        font-size: var(--small-font-size);
+    }
+}

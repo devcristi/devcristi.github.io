@@ -4,7 +4,7 @@ import Navbar from "../../Navbar/Navbar";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ScrollToTop from "../../ScrollToTop/ScrollToTop";
 
-const ProjectTemplate = ({ title, subheading, imgSrc, text, img1 }) => {
+const ProjectTemplate = ({ title, subheading, imgSrc, text, text2, img1 }) => {
     const projectTemplateRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: projectTemplateRef,
@@ -29,14 +29,21 @@ const ProjectTemplate = ({ title, subheading, imgSrc, text, img1 }) => {
             <div className={styles.spacer}>
                 <div className={styles.text}>{text}</div>
             </div>
-            {/* <div className={styles.gallery}>
-                <div className={styles.titleg}>
-                    <h1>Gallery</h1>
+
+            <div className={styles.projectTemplate2} ref={projectTemplateRef}>
+                <Navbar />
+                <div className={styles.sticky}>
+                    <div className={styles.el}>
+                        <div className={styles.imgcontainer2}>
+                            <img src={imgSrc} alt={title ? title : "Project Main"} />
+                        </div>
+                    </div>
+                    <p className={styles.subheading}>{subheading}</p>
                 </div>
-                <div className={styles.gallerycontainer}>
-                    {img1 && <img src={img1} alt={title ? "Gallery for " + title : "Gallery"} className={styles.galleryimg} />}
-                </div>
-            </div> */}
+            </div>
+            <div className={styles.spacer2}>
+                <div className={styles.text2}>{text2}</div>
+            </div>
         </div>
     );
 };

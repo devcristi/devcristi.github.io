@@ -26,6 +26,22 @@ const Sport = () => {
                     </p>
                 </>
             }
+            text2={
+                <>
+                    <p>
+                        React.js, Java SpringBoot and MySql
+                    </p>
+
+                    <p>
+                        It is a web application that allows users, students at UNITBV , to manage thei attendence at sport classes.
+                        The users can create an account, log in and see their attendence.
+                    </p>
+
+                    <p>
+                        Teachers have the ability to see the attendence of their students and give them attendence marks from an admin panel.
+                    </p>
+                </>
+            }
         />
     );
 };

@@ -13,6 +13,14 @@ const Navbar = () => {
 
     return (
         <div className={styles.wrapper}>
+            <div className={styles.logo2}>
+                <Link to='#home'>
+                    devcristi
+                </Link>
+            </div>
+            <div className={styles.hamburger} onClick={toggleMenu}>
+                <RxHamburgerMenu size={30} />
+            </div>
             <div className={styles.navbar}>
                 <ul>
                     <li>
@@ -36,9 +44,6 @@ const Navbar = () => {
                         <Button>contact</Button>
                     </Link>
                 </ul>
-            </div>
-            <div className={styles.hamburger} onClick={toggleMenu}>
-                <RxHamburgerMenu size={30} />
             </div>
             {isMenuOpen && (
                 <div className={styles.mobileMenu}>
