@@ -45,3 +45,10 @@
     position: absolute;
     left: 100%;
 }
+
+@media screen and (max-width: 460px) {
+    .slider h1
+    {
+        font-size: var(--paralax-font-size);
+    }
+}

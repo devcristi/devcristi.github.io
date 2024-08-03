@@ -84,3 +84,30 @@
     align-items: baseline;
     border: 1px solid black;
 }
+
+@media screen and (max-width: 460px) {
+    .wrapper
+    {
+        width: 100%;
+        overflow: hidden;
+        height: 80vh;
+    }
+    .wrapper h1
+    {
+        font-size: var(--medium-font-size);
+    }
+
+    .footer
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    ul
+    {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+    }
+}

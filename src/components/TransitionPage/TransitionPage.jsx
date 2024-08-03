@@ -52,19 +52,34 @@ const TransitionPage = () => {
     // }, []);
 
     return (
-        <motion.div className={styles.wrapper} style={{ y: sm, overflow: "hidden" }} initial={{ y: 0 }} id="about">
-            <motion.h1 style={{ y: sm }} initial={{ y: 0 }}>HI, I’M CRISTI!</motion.h1>
-            <motion.h1 style={{ y: lg }} initial={{ y: 0 }}>YOUNG & CREATIVE</motion.h1>
-            <motion.h1 className={styles.probl} style={{ y: lg }} initial={{ y: 0 }}>STUDENT, DEVELOPER</motion.h1>
-            <motion.div style={{ y: sm }} initial={{ y: 0 }} className={styles.img}></motion.div>
-            <motion.div style={{ y: lg }} initial={{ y: 0 }} className={styles.left}>
-                <h1>I’M STUDYING</h1>
+        <div className={styles.big}>
+            <motion.div className={styles.wrapper} style={{ y: sm, overflow: "hidden" }} initial={{ y: 0 }} id="about">
+                <motion.h1 style={{ y: sm }} initial={{ y: 0 }}>HI, I’M CRISTI!</motion.h1>
+                <motion.h1 style={{ y: lg }} initial={{ y: 0 }}>YOUNG & CREATIVE</motion.h1>
+                <motion.h1 className={styles.probl} style={{ y: lg }} initial={{ y: 0 }}>STUDENT, DEVELOPER</motion.h1>
+                <motion.div style={{ y: sm }} initial={{ y: 0 }} className={styles.img}></motion.div>
+                <motion.div style={{ y: lg }} initial={{ y: 0 }} className={styles.left}>
+                    <h1>I’M STUDYING</h1>
+                </motion.div>
+                <motion.div style={{ y: lg }} initial={{ y: 0 }} className={styles.right}>
+                    <h1>AUTOMATION AND CS</h1>
+                    <h1>AT UNITBV</h1>
+                </motion.div>
             </motion.div>
-            <motion.div style={{ y: lg }} initial={{ y: 0 }} className={styles.right}>
-                <h1>AUTOMATION AND CS</h1>
-                <h1>AT UNITBV</h1>
-            </motion.div>
-        </motion.div>
+            <div className={styles.wrapper2} style={{ y: sm, overflow: "hidden" }} initial={{ y: 0 }} id="about">
+                <h1 style={{ y: sm }} initial={{ y: 0 }}>HI, I’M CRISTI!</h1>
+                <h1 style={{ y: lg }} initial={{ y: 0 }}>YOUNG & CREATIVE</h1>
+                <h1 className={styles.probl2} style={{ y: lg }} initial={{ y: 0 }}>STUDENT, DEVELOPER</h1>
+                <div style={{ y: sm }} initial={{ y: 0 }} className={styles.img2}></div>
+                <div style={{ y: lg }} initial={{ y: 0 }} className={styles.left2}>
+                    <h1>I’M STUDYING</h1>
+                </div>
+                <div style={{ y: lg }} initial={{ y: 0 }} className={styles.right2}>
+                    <h1>AUTOMATION AND CS</h1>
+                    <h1>AT UNITBV</h1>
+                </div>
+            </div>
+        </div>
     );
 };
 
