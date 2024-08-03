@@ -70,7 +70,7 @@
 @media screen and (max-width: 460px) {
     .section h1
     {
-        font-size: var(--normal-mobile-font-size);
+        font-size: var(--normal-mobile2-font-size);
     }
 
     .spline
