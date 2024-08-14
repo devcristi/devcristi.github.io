@@ -6,11 +6,12 @@
 
 .wrapper {
     width: 100%;
-    height: 300vh;
+    height: 400vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .projectTemplate {
@@ -91,10 +92,11 @@
 
 .spacer {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 .text {
@@ -114,16 +116,7 @@
     margin-bottom: 10px;
 }
 
-.gallery {
-    width: 100%;
-    height: 200vh;
-    display: flex;
-    flex-direction: column;
-    background-color: red;
-}
-
-.titleg
-{
+.titleg {
     display: flex;
     font-size: var(--normal-font-size);
     font-weight: 700;
@@ -134,48 +127,97 @@
     text-transform: uppercase;
 }
 
-.gallerycontainer
-{
+.gallerycontainer {
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-
-.galleryimg
-{
+.galleryimg {
     height: 50vh;
     width: 50%;
 }
 
-.galleryimg img
-{
+.galleryimg img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.projectTemplate2
-{
+.projectTemplate2 {
     display: none;
 }
 
+.spacer2 {
+    display: none;
+}
+
+.gallery {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    flex-direction: column;
+}
+
+.img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+.img:nth-child(odd) .content {
+    flex-direction: row;
+}
+
+.img:nth-child(even) .content {
+    flex-direction: row-reverse;
+}
+
+.textp {
+    color: white;
+    font-size: var(--medium2-font-size);
+    font-weight: 700;
+    width: 100%;
+    max-width: 50%;
+    margin: 20px;
+}
+
+.gallery img {
+    object-fit: cover;
+    max-width: 50%;
+}
+
 @media screen and (max-width: 460px) {
-    .wrapper
-    {
-        height: 200vh;
+    .wrapper {
+        height: 250vh;
+        width: 100%;
     }
-    .projectTemplate
-    {
+
+    .projectTemplate {
         display: none;
     }
 
-    .spacer
-    {
+    .spacer {
         display: none;
     }
-    .projectTemplate2
-    {
+
+    .projectTemplate2 {
         display: flex;
         width: 100%;
         height: 100vh;
@@ -184,40 +226,73 @@
         justify-content: center;
     }
 
-    .projectTemplate2 img
-    {
-        width: 90%;
+    .projectTemplate2 img {
+        width: 100%;
         height: auto;
     }
 
-    .subheading
-    {
+    .subheading {
         font-size: var(--medium2-font-size);
         -webkit-text-stroke: 2px #101010;
     }
 
-    .spacer2
-    {
+    .spacer2 {
         width: 100%;
-        height: 100vh;
+        height: 300vh;
         display: flex;
         justify-content: center;
         align-items: flex-start;
     }
 
-    .text2
+    .textp
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--small-font-size);
+        width: 100%;
+        max-width: 100%;
+        margin-left:50px;
+        margin-right:50px;
+    }
+
+
+    .gallery
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+    }
+
+    .img
+    {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 1rem;
+    }
+
+    .content
     {
         display: flex;
         flex-direction: column;
-        font-weight: 700;
-        color: black;
-        text-align: justify;
-        margin: 10px;
-        font-size: var(--small2-font-size);
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
     }
 
-    .text2 p
+    .img img
     {
-        margin-bottom: 10px;
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
     }
 }

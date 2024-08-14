@@ -48,6 +48,11 @@
     display: none;
 }
 
+.logo2
+{
+    display: none;
+}
+
 @media screen and (max-width: 460px) {
     .navbar {
         display: none;

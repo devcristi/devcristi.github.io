@@ -5,6 +5,8 @@ import { FiArrowUpRight } from "react-icons/fi";
 import ProjectTemplate from "../ProjectTemplate/ProjectTemplate";
 import car from "../selfdrivingcar.png";
 import sport1 from "../Sport/sport1.png";
+import sport2 from "../Sport/sport2.png";
+import sport3 from "../Sport/sport3.png";
 const SelfDrivingCar = () => {
     return (
         <ProjectTemplate
@@ -12,15 +14,24 @@ const SelfDrivingCar = () => {
             subheading="Selfdriving car"
             imgSrc={car}
             img1={sport1}
-            text={
+            img3={sport2}
+            img2={sport3}
+            textp1={
                 <>
                     <p>
                        This project simulates a selfdriving car that has a lot of functionalities like road detection, traffic lights and more.
                     </p>
-                        It's built with only vanilla JavaScript and some HTML & CSS.
+                </>
+            }
+            textp2={
+                <>
                     <p>
-
+                        It's built with only vanilla JavaScript and some HTML & CSS.
                     </p>
+                </>
+            }
+            textp3={
+                <>
                     <p>
                         The project is still in development and the full version will be available soon.
                     </p>
