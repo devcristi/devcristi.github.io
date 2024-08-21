@@ -109,16 +109,10 @@
     .project
     {
         width: 100%;
-
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .heading
-    {
-        font-size: var(--paralax-font-size);
-    }
-
+@media screen and (max-width: 768px) {
     .subheading
     {
         font-size: var(--medium-font-size);

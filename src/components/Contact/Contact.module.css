@@ -94,7 +94,7 @@
     }
     .wrapper h1
     {
-        font-size: var(--medium-font-size);
+        font-size: var(--medium2-font-size);
     }
 
     .footer
@@ -122,3 +122,41 @@
         justify-content: flex-end;
     }
 }
+
+/* @media screen and (max-width: 768px)
+{
+    .wrapper
+    {
+        width: 100%;
+        overflow: hidden;
+        height: 80vh;
+    }
+    .wrapper h1
+    {
+        font-size: var(--paralax-font-size);
+    }
+
+    .footer
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    ul
+    {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+
+    }
+
+    .media
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+} */

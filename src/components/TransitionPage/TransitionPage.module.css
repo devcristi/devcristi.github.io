@@ -1,12 +1,12 @@
-*
-{
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.wrapper
-{
+/* Stiluri Generale */
+.wrapper {
     width: 100%;
     height: 200vh;
     display: flex;
@@ -14,20 +14,18 @@
     justify-content: top;
     align-items: center;
     background-color: #24AE65;
-    /* padding-left: 20px; */
-    z-index: 9999999999999999999999999999999999999999;
+    z-index: 9999999999; /* Nu este necesar să folosești un număr atât de mare */
 }
 
-.wrapper h1
-{
-    font-size: var(--big-font-size);
+.wrapper h1 {
+    font-size: var(--big-font-size, 40px); /* Definirea valorii implicite pentru testare */
     font-weight: 700;
     color: white;
     -webkit-text-stroke: 2px #101010;
 }
 
-.img
-{
+/* Stiluri pentru Imagine */
+.img {
     width: 60%;
     height: 90%;
     background-image: url("./portimt.jpg");
@@ -37,31 +35,47 @@
     background-color: #101010;
 }
 
-.left
-{
+/* Stiluri pentru Elemente Text */
+.left {
     align-self: flex-start;
 }
 
-.right
-{
+.right {
     text-align: right;
 }
 
-.wrapper2
-{
+/* Stiluri pentru Wrapper2 */
+.wrapper2 {
     display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+        background-color: #24AE65;
+        z-index: 9999999999; /* Nu este necesar să folosești un număr atât de mare */
+    }
+
+    .wrapper h1 {
+        font-size: var(--normal-font-size, 30px); /* Definirea valorii implicite pentru testare */
+        font-weight: 700;
+        color: white;
+        -webkit-text-stroke: 2px #101010;
+    }
 }
 
 @media screen and (max-width: 460px) {
     .wrapper
     {
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
         display: none;
     }
-    .wrapper2
-    {
+    .wrapper2 {
         width: 100%;
         height: 100vh;
         overflow: hidden;
@@ -72,36 +86,27 @@
         align-items: center;
     }
 
-    .wrapper2 h1
-    {
+    .wrapper2 h1 {
         font-size: var(--medium2-font-size);
         font-weight: 700;
         color: white;
         -webkit-text-stroke: 1px #101010;
     }
 
-    .probl2
-    {
-        text-align: center;
-    }
-
-    .img2
-    {
+    .img2 {
         width: 100%;
-        height: 100%;
+        height: 1090%;
         background-image: url("./portimt.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
 
-    .left2
-    {
+    .left2 {
         align-self: flex-start;
     }
 
-    .right2
-    {
+    .right2 {
         text-align: right;
     }
 }
