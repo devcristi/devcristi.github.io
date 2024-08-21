@@ -112,3 +112,15 @@
 
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .heading
+    {
+        font-size: var(--paralax-font-size);
+    }
+
+    .subheading
+    {
+        font-size: var(--medium-font-size);
+    }
+}

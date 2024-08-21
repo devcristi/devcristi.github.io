@@ -70,5 +70,11 @@
     {
         font-size: var(--normal-font-size);
     }
+}
 
+@media screen and (max-width: 1024px) {
+    .wrapper h1
+    {
+        font-size: var(--paralax-font-size);
+    }
 }

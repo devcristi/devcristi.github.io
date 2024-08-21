@@ -256,7 +256,6 @@
         margin-right:50px;
     }
 
-
     .gallery
     {
         width: 100%;
@@ -294,5 +293,38 @@
         object-fit: cover;
         max-width: 100%;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .subheading
+    {
+        font-size: var(--paralax-font-size);
+    }
+
+    .imgcontainer
+    {
+        width: 70%;
+        height: 100%;
+    }
+
+    .imgcontainer img
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .textp
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--medium2-font-size);
+        width: 100%;
+        max-width: 100%;
+        margin-left:50px;
+        margin-right:50px;
     }
 }

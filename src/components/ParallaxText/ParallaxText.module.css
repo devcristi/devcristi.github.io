@@ -52,3 +52,10 @@
         font-size: var(--paralax-font-size);
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .slider h1
+    {
+        font-size: var(--paralax-font-size);
+    }
+}

@@ -4,22 +4,23 @@ import Navbar from "../../Navbar/Navbar";
 import { FiArrowUpRight } from "react-icons/fi";
 import ProjectTemplate from "../ProjectTemplate/ProjectTemplate";
 import car from "../selfdrivingcar.png";
-import sport1 from "../Sport/sport1.png";
-import sport2 from "../Sport/sport2.png";
-import sport3 from "../Sport/sport3.png";
+import car1 from "../SelfDrivingCar/car1.png"
+import car2 from "../SelfDrivingCar/car2.png";
+import car3 from "../SelfDrivingCar/selfdrivingcar.png";
+
 const SelfDrivingCar = () => {
     return (
         <ProjectTemplate
             title="Brasov"
             subheading="Selfdriving car"
             imgSrc={car}
-            img1={sport1}
-            img3={sport2}
-            img2={sport3}
+            img1={car1}
+            img3={car1}
+            img2={car1}
             textp1={
                 <>
                     <p>
-                       This project simulates a selfdriving car that has a lot of functionalities like road detection, traffic lights and more.
+                       This project simulates a selfdriving car that will have a lot of functionalities like road detection, traffic lights and more.
                     </p>
                 </>
             }
@@ -33,7 +34,7 @@ const SelfDrivingCar = () => {
             textp3={
                 <>
                     <p>
-                        The project is still in development and the full version will be available soon.
+                        This is the first version. The project is still in development and the full version will be available soon.
                     </p>
                 </>
             }
