@@ -18,6 +18,8 @@ import SelfDrivingCar from './components/Projects/SelfDrivingCar/SelfDrivingCar'
 import DevCristi from './components/Projects/DevCristi/DevCristi';
 import Brasov from './components/Projects/Brasov/Brasov';
 import BritishCamps from './components/Projects/BritishCamps/BritishCamps';
+import Prostate from './components/Projects/Prostate/Prostate';
+import { Analytics } from "@vercel/analytics/react"
 function App() {
   useLayoutEffect(() => {
     const lenis = new Lenis();
@@ -66,7 +68,9 @@ function App() {
         <Route path="/selfdrivingcar" element={<SelfDrivingCar />} />
         <Route path="/britishcamps" element={<BritishCamps />} />
         <Route path="/brasov" element={<Brasov />} />
-        <Route path="/devcristi" element={<DevCristi />} />      </Routes>
+        <Route path="/devcristi" element={<DevCristi />} />
+        <Route path="/prostate" element={<Prostate />} />
+      </Routes>
     </div>
   );
 }

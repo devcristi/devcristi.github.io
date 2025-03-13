@@ -1,0 +1,22 @@
+.subheadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Asigură-te că containerul ocupă toată lățimea necesară */
+    width: 100%;
+    text-align: center;
+  }
+
+  .prostataImg {
+    width: 100%;              /* Se asigură că imaginea ocupă toată lățimea containerului */
+    max-width: 800px;         /* Dimensiune maximă, ajustează după preferință */
+    border-radius: 10px;      /* Colțuri rotunjite pentru un efect estetic */
+    object-fit: cover;        /* Păstrează raportul de aspect și acoperă containerul */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Umbră subtilă pentru un efect de adâncime */
+    transition: transform 0.3s ease;  /* Opțional: animație pentru hover */
+  }
+  
+  .prostataImg:hover {
+    transform: scale(1.02);   /* Mărește ușor imaginea la hover */
+  }
+  
