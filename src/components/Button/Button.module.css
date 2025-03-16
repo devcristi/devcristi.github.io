@@ -4,11 +4,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-.buttonText {
-    color: white; /* default color when navbar is not overlapping content */
-    transition: color 0.3s ease 0.3s; /* transition with a small delay */
-  }
-  
-  .buttonText.readable {
-    color: black;
-  }
