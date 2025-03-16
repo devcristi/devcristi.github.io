@@ -4,18 +4,21 @@ import Navbar from "../../Navbar/Navbar";
 import { FiArrowUpRight } from "react-icons/fi";
 import ProjectTemplate from "../ProjectTemplate/ProjectTemplate";
 import dev from "../dev.jpg";
-import sport1 from "../Sport/sport1.png";
-import sport2 from "../Sport/sport2.png";
-import sport3 from "../Sport/sport3.png";
+import sport1 from "./img1.png";
+import sport2 from "./img2.png";
+import sport3 from "./img3.png";
 const DevCristi = () => {
     return (
         <ProjectTemplate
             title="Brasov"
             subheading="devcristi v1"
             imgSrc={dev}
+            imgClassName={styles.longImg} // <-- custom class
             img1={sport1}
             img2={sport2}
             img3={sport3}
+            githubLink={"https://github.com/devcristi/portfoliov1"}
+            live = {"https://devcristi.github.io/portfoliov1/"}
             text={
                 <>
                     <p>

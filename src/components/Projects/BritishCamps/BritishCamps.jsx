@@ -4,9 +4,9 @@ import Navbar from "../../Navbar/Navbar";
 import { FiArrowUpRight } from "react-icons/fi";
 import ProjectTemplate from "../ProjectTemplate/ProjectTemplate";
 import british from "../british.jpg";
-import sport1 from "../Sport/sport1.png";
-import sport2 from "../Sport/sport2.png";
-import sport3 from "../Sport/sport3.png";
+import sport1 from "../BritishCamps/castelul-bran-1-1.webp";
+import sport2 from "../BritishCamps/img1.png";
+import sport3 from "../BritishCamps/img3.png";
 const BritishCamps = () => {
     return (
         <ProjectTemplate

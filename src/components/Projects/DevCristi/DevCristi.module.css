@@ -1,0 +1,5 @@
+.longImg {
+    width: 100%; /* Or set another value such as 800px */
+    max-width: 100%;
+    /* You can also add other styles if needed */
+}

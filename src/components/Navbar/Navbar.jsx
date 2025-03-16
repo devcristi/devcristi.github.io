@@ -7,6 +7,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -21,29 +22,34 @@ const Navbar = () => {
             <div className={styles.hamburger} onClick={toggleMenu}>
                 <RxHamburgerMenu size={30} />
             </div>
-            <div className={styles.navbar}>
-                <ul>
-                    <li>
-                        <div className={styles.logo}>
-                            <Link to='#home'>
-                                devcristi
-                            </Link>
-                        </div>
-                    </li>
-                    <Link to='#about'>
-                        <Button>
-                            about
-                        </Button>
-                    </Link>
-                    <Link to='#projects'>
-                        <Button>
-                            work
-                        </Button>
-                    </Link>
-                    <Link to='#contact'>
-                        <Button>contact</Button>
-                    </Link>
-                </ul>
+            {/* New container to hold the navbar */}
+            <div className={styles.navContainer}>
+                <div className={styles.navbar}>
+                    <ul>
+                        <li>
+                            <div className={styles.logo}>
+                                <Link to='#home'>
+                                    devcristi
+                                </Link>
+                            </div>
+                        </li>
+                        <Link to='#about'>
+                            <Button>
+                                about
+                            </Button>
+                        </Link>
+                        <Link to='#projects'>
+                            <Button>
+                                work
+                            </Button>
+                        </Link>
+                        <Link to='#contact'>
+                            <Button>
+                                contact
+                            </Button>
+                        </Link>
+                    </ul>
+                </div>
             </div>
             {isMenuOpen && (
                 <div className={styles.mobileMenu}>

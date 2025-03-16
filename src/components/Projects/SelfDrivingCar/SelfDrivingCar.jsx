@@ -17,6 +17,7 @@ const SelfDrivingCar = () => {
             img1={car1}
             img3={car1}
             img2={car1}
+            githubLink={"https://github.com/devcristi/self-driving-car"}
             textp1={
                 <>
                     <p>
@@ -27,7 +28,7 @@ const SelfDrivingCar = () => {
             textp2={
                 <>
                     <p>
-                        It's built with only vanilla JavaScript and some HTML & CSS.
+                        This is my first insight into neural networks.
                     </p>
                 </>
             }
@@ -38,6 +39,13 @@ const SelfDrivingCar = () => {
                     </p>
                 </>
             }
+            future_things={
+                <>
+                    <h2>Coming Soon</h2>
+                    <p>
+                        Version 2 will have more functionalities and a better neural network.
+                    </p>
+                </>}
         />
     );
 };

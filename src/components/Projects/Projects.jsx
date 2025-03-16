@@ -8,6 +8,9 @@ import brasov from "./brasov.jpg";
 import dev from "./dev.jpg";
 import british from "./british.jpg";
 import { Link } from "react-router-dom";
+import prostata from "./Prostate/10015_1000015_t2w_slice_4-removebg-preview.png";
+import absoluto from "./Absoluto/absoluto-bjj-international.png";
+import robot from "./Robot/img1.jpg";
 const Projects = () => {
     const ProjectLink = ({ heading, subheading, imgSrc, href }) => {
         const ref = useRef(null);
@@ -47,32 +50,32 @@ const Projects = () => {
                     <div className={styles.project}>
                         <motion.span
                             variants={{
-                                initial: {
-                                   x:0,
-                                },
-                                whileHover: {
-                                    x: -16,
-                                },
+                                initial: { x: 0 },
+                                whileHover: { x: -16 },
                             }}
                             transition={{
                                 type: "spring",
                                 delayChildren: 0.25,
                                 staggerChildren: 0.05,
                             }}
-                            className={styles.heading}>{heading.split("").map((l, i) => {
-                                return <motion.span
-                                    variants={{
-                                        initial: {
-                                            x:0,
-                                        },
-                                        whileHover: {
-                                            x: 16,
-                                        },
-                                    }}
-                                    transition={{
-                                        type: "spring",
-                                    }}
-                                className={styles.letter} key={i}>{l}</motion.span>;
+                            className={styles.heading}
+                        >
+                            {heading.split("").map((l, i) => {
+                                return l === " " ? (
+                                    <span key={`space-${i}`}>&nbsp;</span>
+                                ) : (
+                                    <motion.span
+                                        key={i}
+                                        variants={{
+                                            initial: { x: 0 },
+                                            whileHover: { x: 16 },
+                                        }}
+                                        transition={{ type: "spring" }}
+                                        className={styles.letter}
+                                    >
+                                        {l}
+                                    </motion.span>
+                                );
                             })}
                         </motion.span>
                         <span className={styles.subheading}>{subheading}</span>
@@ -124,6 +127,29 @@ const Projects = () => {
     };
     return (
         <div className={styles.projectcontainer}>
+            <Link to="/prostate">
+                <ProjectLink
+                    heading="tumorxplorer"
+                    subheading="PyTorch | PI-CAI Dataset | Attention UNet"
+                    imgSrc={prostata}
+                    />
+            </Link>
+            <Link to="/britishcamps">
+                <ProjectLink
+                    heading="british camps ro"
+                    subheading="Marketing Developer | Apr 2024 -Jun 2024"
+                    imgSrc={british}
+                    href="#"
+                />
+            </Link>
+            <Link to="/absoluto">
+                <ProjectLink
+                    heading="abjsoluto bjj"
+                    subheading="React.js | Java SpringBoot | MySql"
+                    imgSrc={absoluto}
+                    href="#"
+                />
+            </Link>
             <Link to="/sport">
                 <ProjectLink
                     heading="prezente sport"
@@ -131,19 +157,18 @@ const Projects = () => {
                     imgSrc={sport}
                     />
             </Link>
+            <Link to="/robot">
+                <ProjectLink
+                    heading="3d printend tank"
+                    subheading="ESP32 | C++ | Fusion 360 | PID control | 3D Printing"
+                    imgSrc={robot}
+                    />
+            </Link>
             <Link to="/selfdrivingcar">
                 <ProjectLink
                     heading="self driving car"
-                    subheading="Javascript | Under development"
+                    subheading="Vanilla Javascript | Under development"
                     imgSrc={selfdrivingcar}
-                    href="#"
-                />
-            </Link>
-            <Link to="/britishcamps">
-                <ProjectLink
-                    heading="british camps ro"
-                    subheading="Marketing Developer | Apr 2024 -Jun 2024"
-                    imgSrc={british}
                     href="#"
                 />
             </Link>

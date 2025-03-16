@@ -19,7 +19,9 @@ import DevCristi from './components/Projects/DevCristi/DevCristi';
 import Brasov from './components/Projects/Brasov/Brasov';
 import BritishCamps from './components/Projects/BritishCamps/BritishCamps';
 import Prostate from './components/Projects/Prostate/Prostate';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics";
+import Absoluto from './components/Projects/Absoluto/Absoluto';
+import Robot from './components/Projects/Robot/Robot';
 function App() {
   useLayoutEffect(() => {
     const lenis = new Lenis();
@@ -70,6 +72,8 @@ function App() {
         <Route path="/brasov" element={<Brasov />} />
         <Route path="/devcristi" element={<DevCristi />} />
         <Route path="/prostate" element={<Prostate />} />
+        <Route path="/absoluto" element={<Absoluto />} />
+        <Route path="/robot" element={<Robot />} />
       </Routes>
     </div>
   );

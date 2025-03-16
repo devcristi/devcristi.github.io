@@ -4,9 +4,9 @@ import Navbar from "../../Navbar/Navbar";
 import { FiArrowUpRight } from "react-icons/fi";
 import ProjectTemplate from "../ProjectTemplate/ProjectTemplate";
 import brasov from "../brasov.jpg";
-import sport1 from "../Sport/sport1.png";
-import sport2 from "../Sport/sport2.png";
-import sport3 from "../Sport/sport3.png";
+import sport1 from "./img1.jpeg";
+import sport2 from "./img2.png";
+import sport3 from "./img3.png";
 const Brasov = () => {
     return (
         <ProjectTemplate
@@ -16,6 +16,8 @@ const Brasov = () => {
             img1={sport1}
             img2={sport2}
             img3={sport3}
+            githubLink={"https://github.com/devcristi/proiect-next-loco"}
+            live = {"https://devcristi.github.io/proiect-next-loco/"}
 
             textp1={
                 <>
